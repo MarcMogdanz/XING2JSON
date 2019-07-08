@@ -1,0 +1,23 @@
+{
+  "extends": ["airbnb-base", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "none",
+        "ignoreRestSiblings": false
+      }
+    ],
+    "class-methods-use-this": "error",
+    "import/extensions": "error",
+    "no-unexpected-multiline": "error"
+  },
+  "parser": "babel-eslint",
+  "plugins": ["prettier"],
+  "env": {
+    "webextensions": true,
+    "browser": true,
+    "jquery": true
+  }
+}
