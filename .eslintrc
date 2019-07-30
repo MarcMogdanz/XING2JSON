@@ -11,7 +11,8 @@
     ],
     "class-methods-use-this": "error",
     "import/extensions": "error",
-    "no-unexpected-multiline": "error"
+    "no-unexpected-multiline": "error",
+    "no-warning-comments": "error"
   },
   "parser": "babel-eslint",
   "plugins": ["prettier"],

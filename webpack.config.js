@@ -34,7 +34,12 @@ const options = {
   entry: {
     popup: path.join(__dirname, "src", "js", "popup.js"),
     options: path.join(__dirname, "src", "js", "options.js"),
-    background: path.join(__dirname, "src", "js", "background.js")
+    background: path.join(__dirname, "src", "js", "background.js"),
+    content: path.join(__dirname, "src", "js", "content.js")
+  },
+  // see for more: https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate#content-scripts
+  chromeExtensionBoilerplate: {
+    notHotReload: ["content"]
   },
   output: {
     path: path.join(__dirname, "build"),
@@ -44,8 +49,7 @@ const options = {
     rules: [
       {
         test: /\.css$/,
-        loader: "style-loader!css-loader",
-        exclude: /node_modules/
+        use: ["style-loader", "css-loader"]
       },
       {
         test: new RegExp(`.(${fileExtensions.join("|")})$`),
