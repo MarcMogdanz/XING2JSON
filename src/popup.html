@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title></title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <style>
+      body {
+        width: 400px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello!</h1>
-    <img src="img/icon-128.png" />
+    <div class="container">
+      <h2 class="text-center">XING to JSON</h2>
+
+      <div id="notOnXING" class="text-center">
+        You're not on XING currently.
+        <button
+          type="button"
+          class="btn btn-info btn-block"
+          style="margin-top: 10px;"
+          id="openXING"
+        >
+          Open XING.com
+        </button>
+      </div>
+
+      <div id="notOnProfile" class="text-center">
+        You're either not on a XING profile or not logged in.
+      </div>
+
+      <div id="generateJSON" class="text-center">
+        Please wait until the page <i><b>completely</b></i> loaded and then hit
+        the button below.
+
+        <button
+          type="button"
+          class="btn btn-success btn-block"
+          style="margin-top: 10px;"
+          id="generateResume"
+        >
+          Generate JSON resume
+        </button>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="container">
+      <p class="text-center">
+        <a href="#" id="openGitHub">GitHub</a>
+      </p>
+    </div>
   </body>
 </html>
