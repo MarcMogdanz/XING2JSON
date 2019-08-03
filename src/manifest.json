@@ -8,7 +8,7 @@
   },
   "browser_action": {
     "default_popup": "popup.html",
-    "default_icon": "icon-34.png",
+    "default_icon": "icon-32.png",
     "default_title": "XING2JSON"
   },
   "content_scripts": [
@@ -18,7 +18,11 @@
     }
   ],
   "icons": {
-    "128": "icon-128.png"
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "96": "icon-96.png",
+    "128": "icon-128.png",
+    "196": "icon-196.png"
   },
   "permissions": ["tabs", "activeTab", "storage", "downloads"],
   "manifest_version": 2,
